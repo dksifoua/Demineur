@@ -21,9 +21,7 @@ import javax.swing.SwingUtilities;
  */
 public class Demineur extends JFrame implements ActionListener{
 
-    /**
-     * @param args the command line arguments
-     */
+    private static final long serialVersionUID = 1L;
     
     private int nbrLignes;
     private int nbrColones;
@@ -34,9 +32,8 @@ public class Demineur extends JFrame implements ActionListener{
     private Menu menu;
     private final Panel panel = new Panel();
     private final Fonction fonction = new Fonction();
-    private MonThread monThread;
     
-    public Demineur(){
+    public Demineur() {
         initUI();
     }
     
@@ -153,8 +150,7 @@ public class Demineur extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args){
-        // TODO code application logic here
-        Demineur demineur = new Demineur();
+        new Demineur();
     }
 
     @Override

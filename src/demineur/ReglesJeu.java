@@ -14,6 +14,7 @@ import javax.swing.*;
  */
 public final class ReglesJeu extends JFrame {
     
+    private static final long serialVersionUID = 1L;
     private final JPanel panel = new JPanel();
     private final JLabel texte = new JLabel("Le but du jeu est de découvrir toutes les cases libres sans faire exploser les mines.\n"
             + "Pour libérer une case, faire un clic gauche (clic normal).\n"
